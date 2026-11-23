@@ -1,2 +1,5 @@
-pandas
-openpyxl
+# Direct Python dependencies for the Codespace demo (not a transitive lockfile).
+# Core WITS framing, replay, journal and synthetic tests use only the stdlib.
+pandas>=2.2,<3
+openpyxl>=3.1,<4
+databricks-sdk>=0.40,<1

@@ -1,0 +1,31 @@
+# Local Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Secrets and machine-local authentication
+.env
+.env.*
+!.env.example
+.databrickscfg
+*.pem
+*.key
+
+# Local receipt state, replay/export output and transient files
+WITS_starter/spool/
+*.sqlite
+*.sqlite-*
+*.tmp
+# Existing Excel and CSV source files are intentionally retained in Git.
+# Do not ignore WITS_starter/data/raw/ or WITS_starter/data/prepared/.
+
+# Local-only environment inventory (review before publishing)
+environment-snapshot.txt
+# Duplicate of WITS_starter/test_wits.py from earlier experiments
+/test_wits.py
+# Upgrade backups are stored outside this repository.
